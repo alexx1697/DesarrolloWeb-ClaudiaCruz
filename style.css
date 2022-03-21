@@ -283,39 +283,12 @@ p
  0% {background-color: rgb(218, 218, 218);left: 0;top: 0px;}
  100% {background-color: rgb(190, 179, 31);left: 0px; top: 30px;} 
 }
-/* Copy this @keyframes block to your CSS*/
-@keyframes yourAnimation {
-    0.0%{
-   transform: scale(1) translate(-100px, 0) skew(0deg);
-  }
-   39.9%{
-    transform: scale(1) translate(100px, 0) skew(-5deg);
-   }
-    45.3%{
-    transform: scale(1) translate(100px, -6px) skew(0deg);
-   }
-    5.1%{
-   transform: scale(1) translate(-100px, 0) skew(-12deg);
-   }
-  50.3%{
-  transform: scale(1) translate(100px, 0px) skew(0deg);
-   }
-   55.3%{
-   transform: scale(1) translate(100px, -10px) skew(0deg);
-  }
-    60.3%{
-   transform: scale(1) translate(100px, 0px) skew(5deg);
-  }
-    95.1%{
-    transform: scale(1) translate(-100px, 0) skew(12deg);
-    }
-   99.6%{
-    transform: scale(1) translate(-100px, 0) skew(0deg);
-   }
-    }
-    
-    
-    /* Add the animation: property to whichever element you want to animate */
-    .animacionnn{
-   animation: yourAnimation 5s ease 0s infinite normal forwards;
-    }
+/*********************Pagina de Nosotros************/
+.titulonosotros
+{
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+   
+}
