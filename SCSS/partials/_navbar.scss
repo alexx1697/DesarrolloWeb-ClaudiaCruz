@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header .navbar 
+{
+    background-color: transparent !important;
+}
+.navbar ul li a
+{
+    font-family: $fredoka;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+
+    &:hover{
+        color: rgb(76, 34, 231);
+        transition: .9s;
+
+        &::after{
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) scaleX(1);
+        }
+    }
+    
+    &::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%) scaleX(0);
+        -webkit-transform: translateX(-50%) scaleX(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(177, 41, 0);
+        -webkit-transition: transform 250ms;
+        transition: transform 250ms;
+    }
+}

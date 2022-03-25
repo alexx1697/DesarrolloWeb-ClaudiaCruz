@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/***************Pagina de Home********************/
+body
+{
+    background-color: $background;
+}
+.header 
+{
+    background: url(#{$path}/destacda-hamburguesa.jpg) no-repeat center;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+     
+}
+
+.titulo
+{
+    font-family: $fredoka;
+    font-size: 50px;
+}
+
+
+.titulo2
+{
+    font-family: $fredoka;
+    font-size: 40px;
+    color: rgb(146, 38, 5);
+}
+
+p
+{
+    font-family: $poppins;
+    color: rgb(92, 96, 99);
+    font-weight: bold;
+}
+
+.reseñas
+{
+    font-family: $poppins;
+    color: rgb(201, 75, 25);
+    font-weight: bold;
+
+    &texto{
+        font-family: $poppins;
+        color: rgb(45, 47, 49);
+        font-size: 20px;
+    }
+    
+
+}
+.footerhome
+{
+    background-color: rgb(230, 87, 62);
+    
+    &letra{
+        font-family: $poppins;
+        color: rgb(0, 0, 0);
+    }
+
+}

@@ -1,0 +1,453 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/***************Pagina de Home********************/
+body {
+  background-color: #dadada;
+}
+
+.header {
+  background: url(/fotos/destacda-hamburguesa.jpg) no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.titulo {
+  font-family: "Fredoka", sans-serif;
+  font-size: 50px;
+}
+
+.titulo2 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 40px;
+  color: #922605;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #5c6063;
+  font-weight: bold;
+}
+
+.reseñas {
+  font-family: "Poppins", sans-serif;
+  color: #c94b19;
+  font-weight: bold;
+}
+
+.reseñastexto {
+  font-family: "Poppins", sans-serif;
+  color: #2d2f31;
+  font-size: 20px;
+}
+
+.footerhome {
+  background-color: #e6573e;
+}
+
+.footerhomeletra {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/***********Pagina de Menu***********************/
+.nuestromenu {
+  background-color: #f57352;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 60px;
+}
+
+.container h2 {
+  font-family: "Fredoka", sans-serif;
+}
+
+.precios {
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  color: #0d0d70;
+}
+
+.supreme {
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: #f57352;
+}
+
+.boneless {
+  color: #584a46;
+}
+
+.bonelessbufalo {
+  color: #bd3827;
+}
+
+.bonelessLemonp {
+  color: #77bd27;
+}
+
+.bonelessspicy {
+  color: #754039;
+}
+
+.bonelessfrutos {
+  color: #bd0303;
+}
+
+.bonelessmango {
+  color: #9e7810;
+}
+
+.bonelessjamaica {
+  color: #833e35;
+}
+
+.hamburguesa {
+  width: 250px;
+  height: 50px;
+  background-color: #6b3a13;
+  border-radius: 1rem;
+  -webkit-animation-name: mianimacion;
+          animation-name: mianimacion;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  border-top-right-radius: 5rem;
+  border-top-left-radius: 5rem;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  position: absolute;
+}
+
+.hamburguesacarne {
+  width: 250px;
+  height: 40px;
+  background-color: #6b3a13;
+  border-radius: 1rem;
+  -webkit-animation-name: mianimacion2;
+          animation-name: mianimacion2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  position: absolute;
+}
+
+.hamburguesalechuga {
+  width: 250px;
+  height: 40px;
+  background-color: #1ac51a;
+  border-radius: 1rem;
+  -webkit-animation-name: mianimacion3;
+          animation-name: mianimacion3;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  position: absolute;
+}
+
+.hamburguesatomate {
+  width: 250px;
+  height: 40px;
+  background-color: #1ac51a;
+  border-radius: 1rem;
+  -webkit-animation-name: mianimacion4;
+          animation-name: mianimacion4;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  position: absolute;
+}
+
+.hamburguesapan2 {
+  width: 250px;
+  height: 50px;
+  background-color: #1ac51a;
+  border-radius: 1rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  -webkit-animation-name: mianimacion5;
+          animation-name: mianimacion5;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  position: absolute;
+}
+
+@-webkit-keyframes mianimacion {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #926641;
+    left: 0px;
+    top: 30px;
+  }
+}
+
+@keyframes mianimacion {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #926641;
+    left: 0px;
+    top: 30px;
+  }
+}
+
+@-webkit-keyframes mianimacion2 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #6b3a13;
+    left: 0px;
+    top: 160px;
+  }
+}
+
+@keyframes mianimacion2 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #6b3a13;
+    left: 0px;
+    top: 160px;
+  }
+}
+
+@-webkit-keyframes mianimacion3 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #1ac51a;
+    left: 0px;
+    top: 120px;
+  }
+}
+
+@keyframes mianimacion3 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #1ac51a;
+    left: 0px;
+    top: 120px;
+  }
+}
+
+@-webkit-keyframes mianimacion4 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #ee221b;
+    left: 0px;
+    top: 80px;
+  }
+}
+
+@keyframes mianimacion4 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #ee221b;
+    left: 0px;
+    top: 80px;
+  }
+}
+
+@-webkit-keyframes mianimacion5 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #926641;
+    left: 0px;
+    top: 200px;
+  }
+}
+
+@keyframes mianimacion5 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #926641;
+    left: 0px;
+    top: 200px;
+  }
+}
+
+@-webkit-keyframes mianimacion6 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #be1f1f;
+    left: 0px;
+    top: 150px;
+  }
+}
+
+@keyframes mianimacion6 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #be1f1f;
+    left: 0px;
+    top: 150px;
+  }
+}
+
+@-webkit-keyframes mianimacion7 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #beb31f;
+    left: 0px;
+    top: 30px;
+  }
+}
+
+@keyframes mianimacion7 {
+  0% {
+    background-color: #dadada;
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    background-color: #beb31f;
+    left: 0px;
+    top: 30px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*********************Pagina de Nosotros************/
+.titulonosotros {
+  font-family: "Fredoka", sans-serif;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header .navbar {
+  background-color: transparent !important;
+}
+
+.navbar ul li a {
+  font-family: "Fredoka", sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar ul li a:hover {
+  color: #4c22e7;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.navbar ul li a:hover::after {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%) scaleX(1);
+}
+
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #b12900;
+  -webkit-transition: transform 250ms;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+/*# sourceMappingURL=style.css.map */
