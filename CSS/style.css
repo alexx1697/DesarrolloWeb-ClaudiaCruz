@@ -14,6 +14,13 @@
 }
 
 /***************Pagina de Home********************/
+/********Extend*******/
+.poppins, p, .reseñas {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+/******Extend********/
 body {
   background-color: #dadada;
 }
@@ -37,15 +44,11 @@ body {
 }
 
 p {
-  font-family: "Poppins", sans-serif;
   color: #5c6063;
-  font-weight: bold;
 }
 
 .reseñas {
-  font-family: "Poppins", sans-serif;
   color: #c94b19;
-  font-weight: bold;
 }
 
 .reseñastexto {
@@ -71,11 +74,36 @@ p {
 }
 
 /***********Pagina de Menu***********************/
+/******************************Extend**************************/
+.animacionbox1, .hamburguesa, .hamburguesapan2 {
+  width: 250px;
+  height: 50px;
+  border-radius: 1rem;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  position: absolute;
+}
+
+.animacionbox2, .hamburguesacarne, .hamburguesalechuga, .hamburguesatomate {
+  width: 250px;
+  height: 40px;
+  border-radius: 1rem;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  position: absolute;
+}
+
+/******************************Extend**************************/
+/******************************Mixin**************************/
 .nuestromenu {
-  background-color: #f57352;
   font-family: "Fredoka", sans-serif;
-  font-weight: bold;
   color: black;
+  background-color: #f57352;
+  font-weight: bold;
   font-size: 60px;
 }
 
@@ -85,14 +113,14 @@ p {
 
 .precios {
   font-family: "Fredoka", sans-serif;
-  font-size: 20px;
   color: #0d0d70;
+  font-size: 20px;
 }
 
 .supreme {
   font-family: "Fredoka", sans-serif;
-  font-weight: bold;
   color: black;
+  font-weight: bold;
   background-color: #f57352;
 }
 
@@ -125,85 +153,47 @@ p {
 }
 
 .hamburguesa {
-  width: 250px;
-  height: 50px;
   background-color: #6b3a13;
-  border-radius: 1rem;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
   -webkit-animation-name: mianimacion;
           animation-name: mianimacion;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  border-top-right-radius: 5rem;
-  border-top-left-radius: 5rem;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  position: absolute;
 }
 
 .hamburguesacarne {
-  width: 250px;
-  height: 40px;
   background-color: #6b3a13;
-  border-radius: 1rem;
   -webkit-animation-name: mianimacion2;
           animation-name: mianimacion2;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  position: absolute;
 }
 
 .hamburguesalechuga {
-  width: 250px;
-  height: 40px;
   background-color: #1ac51a;
-  border-radius: 1rem;
   -webkit-animation-name: mianimacion3;
           animation-name: mianimacion3;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  position: absolute;
 }
 
 .hamburguesatomate {
-  width: 250px;
-  height: 40px;
   background-color: #1ac51a;
-  border-radius: 1rem;
   -webkit-animation-name: mianimacion4;
           animation-name: mianimacion4;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  position: absolute;
 }
 
 .hamburguesapan2 {
-  width: 250px;
-  height: 50px;
   background-color: #1ac51a;
-  border-radius: 1rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
   -webkit-animation-name: mianimacion5;
           animation-name: mianimacion5;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  position: absolute;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
 }
 
 @-webkit-keyframes mianimacion {

@@ -4,12 +4,48 @@
     box-sizing: border-box;
 }
 /***********Pagina de Menu***********************/
+/******************************Extend**************************/
+.animacionbox1
+{
+    width: 250px;
+    height: 50px;
+    border-radius: 1rem;
+    animation-duration: 1s;
+    animation-fill-mode:both;
+    position: absolute;
+}
+.animacionbox2
+{
+    width: 250px;
+    height: 40px;
+    border-radius: 1rem;
+    animation-duration: 1s;
+    animation-fill-mode:both;
+    position: absolute;
+}
+/******************************Extend**************************/
+
+/******************************Mixin**************************/
+@mixin animaciones ($nombre, $tiempo) {
+    
+    animation-name: $nombre;
+    animation-delay: $tiempo;
+}
+@mixin texto ($font, $color){
+
+    font-family: $font;
+    color: $color;
+}
+
+
+
+
+
 .nuestromenu
 {
+    @include texto($fredoka, black );
     background-color: rgb(245, 115, 82);
-    font-family: $fredoka;
     font-weight: bold;
-    color: black;
     font-size: 60px;
 }
 .container h2
@@ -18,15 +54,13 @@
 }
 .precios
 {
-    font-family: $fredoka;
+    @include texto($fredoka, rgb(13, 13, 112) );
     font-size: 20px;
-    color: rgb(13, 13, 112);
 }
 .supreme
 {
-    font-family: $fredoka;
+    @include texto($fredoka,rgb(0, 0, 0) );
     font-weight: bold;
-    color: rgb(0, 0, 0);
     background-color: rgb(245, 115, 82);
 }
 .boneless
@@ -61,65 +95,39 @@
 
 .hamburguesa
 {
-    width: 250px;
-    height: 50px;
+    @extend .animacionbox1;
     background-color: rgb(107, 58, 19);
-    border-radius: 1rem;
-    animation-name: mianimacion;
-    animation-duration: 1s;
-    border-top-right-radius: 5rem;
     border-top-left-radius: 5rem;
-    animation-delay: 2s;
-    animation-fill-mode:both;
-    position: absolute;
+    border-top-right-radius: 5rem;
+    @include animaciones(mianimacion, 2s );
+    
 
     &carne
     {
-        width: 250px;
-        height: 40px;
+        @extend .animacionbox2;
         background-color: rgb(107, 58, 19);
-        border-radius: 1rem;
-        animation-name: mianimacion2;
-        animation-duration: 1s;
-        animation-delay: 0.5s;
-        animation-fill-mode:both;
-        position: absolute;
+        @include animaciones(mianimacion2,0.5s);
     }
     &lechuga
     {
-        width: 250px;
-        height: 40px;
+        @extend .animacionbox2;
         background-color: rgb(26, 197, 26);
-        border-radius: 1rem;
-        animation-name: mianimacion3;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-fill-mode:both;
-        position: absolute;
+        @include animaciones(mianimacion3,1s );
     }
     &tomate
     {
-        width: 250px;
-        height: 40px;
+        @extend .animacionbox2;
         background-color: rgb(26, 197, 26);
-        border-radius: 1rem;
-        animation-name: mianimacion4;
-        animation-duration: 1s;
-        animation-delay: 1.5s;
-        animation-fill-mode:both;
-        position: absolute;
+        @include animaciones(mianimacion4,1.5s );
     }
     &pan2{
-        width: 250px;
-        height: 50px;
+
+        @extend .animacionbox1;
         background-color: rgb(26, 197, 26);
-        border-radius: 1rem;
+        @include animaciones(mianimacion5,0s );
         border-bottom-left-radius: 5rem;
         border-bottom-right-radius: 5rem;
-        animation-name: mianimacion5;
-        animation-duration: 1s;
-        animation-fill-mode:both;
-        position: absolute;
+
     }
     
 }

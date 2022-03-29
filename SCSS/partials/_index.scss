@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 /***************Pagina de Home********************/
+/********Extend*******/
+.poppins
+{
+    font-family: $poppins;
+    font-weight: bold;
+}
+/******Extend********/
 body
 {
     background-color: $background;
@@ -33,16 +40,16 @@ body
 
 p
 {
-    font-family: $poppins;
+    @extend .poppins;
     color: rgb(92, 96, 99);
-    font-weight: bold;
+    
 }
 
 .reseñas
 {
-    font-family: $poppins;
+    @extend .poppins;
     color: rgb(201, 75, 25);
-    font-weight: bold;
+    
 
     &texto{
         font-family: $poppins;
